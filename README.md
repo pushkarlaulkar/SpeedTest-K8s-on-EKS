@@ -18,6 +18,7 @@ Instructions to deploy SpeedTest on AWS EKS Auto Mode
 To install this app using Helm, perform below steps
   1. Generate a certificate from ACM for your domain name. The certificate arn will be required in the next step since we are running ALB on port 443.
   2. Run the command
+     
      ```
      helm install speedtest ./helm --namespace speedtest --create-namespace --set certificate_arn=arn_got_from_previous_step
      ```
