@@ -1,7 +1,7 @@
 Instructions to deploy SpeedTest on AWS EKS Auto Mode
   1. Deploy EKS cluster through Auto Mode through AWS Console. Add the ` CoreDNS `, ` VPC CNI `, ` Kube Proxy ` add ons.
   2. Create a namespace. ` kubectl create ns speedtest `
-  3. Deploy the `speedtest` deployment & service using the `kubectl` command
+  3. Deploy the **speedtest** deployment & service using the below command
      ```
      kubectl -n speedtest apply -f speedtest-dep.yml -f speedtest-svc.yml
      ```
